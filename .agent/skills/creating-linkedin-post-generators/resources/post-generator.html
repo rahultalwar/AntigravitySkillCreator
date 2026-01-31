@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Post Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="sidebar no-print">
+            <h2>Post Settings</h2>
+            <div class="input-group">
+                <label for="topic">Topic</label>
+                <input type="text" id="topic" placeholder="e.g., Remote work benefits">
+            </div>
+            <div class="input-group">
+                <label for="tone">Tone</label>
+                <select id="tone">
+                    <option value="professional">Professional</option>
+                    <option value="inspirational">Inspirational</option>
+                    <option value="casual">Casual</option>
+                    <option value="instructional">Instructional</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="post-content">Generated Content</label>
+                <textarea id="post-content" rows="10">This is where your high-value LinkedIn post will appear. 🚀
+
+Hooks are essential for engagement.
+
+#LinkedInTips #Networking</textarea>
+            </div>
+            <button class="generate-btn">Generate Post</button>
+            <button class="copy-btn">Copy to Clipboard</button>
+        </aside>
+
+        <section class="preview-area">
+            <div class="linkedin-card">
+                <div class="card-header">
+                    <div class="profile-pic"></div>
+                    <div class="user-info">
+                        <span class="user-name">Your Name</span>
+                        <span class="user-desc">Headline goes here</span>
+                        <span class="post-time">1h • 🌐</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p id="preview-text">This is where your high-value LinkedIn post will appear. 🚀<br><br>Hooks are
+                        essential for engagement.<br><br>#LinkedInTips #Networking</p>
+                </div>
+                <div class="card-footer">
+                    <div class="stats">
+                        <span>👍 42</span>
+                        <span>12 comments</span>
+                    </div>
+                    <div class="actions">
+                        <span>Like</span>
+                        <span>Comment</span>
+                        <span>Repost</span>
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -6,6 +6,7 @@ This project is a centralized collection of specialized **Skills** designed for 
 
 | Skill Name | Description |
 | :--- | :--- |
+| **[creating-linkedin-post-generators](.agent/skills/creating-linkedin-post-generators/)** | Scaffolds a web-based LinkedIn post generator application. |
 | **[creating-resume-generators](.agent/skills/creating-resume-generators/)** | Scaffolds a web-based resume creator application with real-time preview and PDF export capabilities. |
 | **[scaffolding-playwright-framework](.agent/skills/scaffolding-playwright-framework/)** | Creates a comprehensive Playwright testing framework with TypeScript, Page Object Model (POM), and custom reporting. |
 | **[updating-playwright-framework](.agent/skills/updating-playwright-framework/)** | Analyzes and creates updates for an existing Playwright framework (adding tests, pages, or config). |

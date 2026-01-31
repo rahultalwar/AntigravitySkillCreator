@@ -1,0 +1,169 @@
+:root {
+    --li-blue: #0a66c2;
+    --li-bg: #f3f2ef;
+    --li-text: #000000e6;
+    --li-secondary: #00000099;
+    --li-white: #ffffff;
+    --li-border: #ebebeb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: var(--li-bg);
+    color: var(--li-text);
+}
+
+.app-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 400px;
+    background: var(--li-white);
+    padding: 2rem;
+    border-right: 1px solid var(--li-border);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--li-blue);
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--li-border);
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.generate-btn {
+    background: var(--li-blue);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.copy-btn {
+    background: transparent;
+    color: var(--li-blue);
+    border: 1px solid var(--li-blue);
+    padding: 0.75rem;
+    border-radius: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.preview-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.linkedin-card {
+    width: 555px;
+    background: var(--li-white);
+    border-radius: 8px;
+    border: 1px solid var(--li-border);
+    height: fit-content;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+    padding: 12px 16px;
+    display: flex;
+    gap: 8px;
+}
+
+.profile-pic {
+    width: 48px;
+    height: 48px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.user-desc {
+    font-size: 0.75rem;
+    color: var(--li-secondary);
+}
+
+.post-time {
+    font-size: 0.75rem;
+    color: var(--li-secondary);
+}
+
+.card-body {
+    padding: 4px 16px 12px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.card-footer {
+    border-top: 1px solid var(--li-border);
+}
+
+.stats {
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--li-secondary);
+}
+
+.actions {
+    padding: 4px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions span {
+    padding: 8px 12px;
+    font-weight: 600;
+    color: var(--li-secondary);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1000px) {
+    .app-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+}
