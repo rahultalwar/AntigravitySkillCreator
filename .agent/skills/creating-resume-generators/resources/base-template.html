@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="no-print">
+        <h1>Resume Genius</h1>
+        <p>Craft your professional story in minutes.</p>
+    </header>
+
+    <main>
+        <div class="editor no-print">
+            <section class="form-section">
+                <h2>Personal Info</h2>
+                <input type="text" id="name-input" placeholder="Full Name" value="John Doe">
+                <input type="text" id="title-input" placeholder="Professional Title" value="Senior Software Engineer">
+                <input type="email" id="email-input" placeholder="Email" value="john.doe@example.com">
+                <input type="tel" id="phone-input" placeholder="Phone" value="+1 (555) 000-0000">
+            </section>
+
+            <section class="form-section">
+                <h2>Summary</h2>
+                <textarea id="summary-input" placeholder="Professional Summary">Innovative Software Engineer with 5+ years of experience in building scalable web applications. Passionate about clean code and user-centric design.</textarea>
+            </section>
+
+            <section class="form-section">
+                <h2>Experience</h2>
+                <div id="experience-inputs">
+                    <div class="exp-item">
+                        <input type="text" placeholder="Company" value="Tech Solutions Inc.">
+                        <input type="text" placeholder="Role" value="Lead Developer">
+                        <textarea placeholder="Description">Led a team of 10 developers to build a high-traffic e-commerce platform.</textarea>
+                    </div>
+                </div>
+            </section>
+
+            <button onclick="window.print()" class="print-btn">Download PDF</button>
+        </div>
+
+        <div class="resume-preview">
+            <div id="resume-content">
+                <header class="resume-header">
+                    <h1 id="preview-name">John Doe</h1>
+                    <h2 id="preview-title">Senior Software Engineer</h2>
+                    <div class="contact-info">
+                        <span id="preview-email">john.doe@example.com</span> | 
+                        <span id="preview-phone">+1 (555) 000-0000</span>
+                    </div>
+                </header>
+
+                <section class="resume-section">
+                    <h3>Summary</h3>
+                    <p id="preview-summary">Innovative Software Engineer with 5+ years of experience in building scalable web applications. Passionate about clean code and user-centric design.</p>
+                </section>
+
+                <section class="resume-section">
+                    <h3>Experience</h3>
+                    <div id="preview-experience">
+                        <div class="preview-exp-item">
+                            <h4>Tech Solutions Inc.</h4>
+                            <h5>Lead Developer</h5>
+                            <p>Led a team of 10 developers to build a high-traffic e-commerce platform.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
